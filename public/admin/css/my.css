@@ -1,0 +1,225 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 13, 2016, 11:11:30 PM
+    Author     : Kabir
+*/
+.alert {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.dropdown-menu>li>a {
+    font-size: small;
+}
+
+.table-hover>tbody>tr>td.item-title {
+    position: relative;
+    padding-right: 45px;
+}
+.table-hover>tbody>tr>td .tools {
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+.table-hover>tbody>tr:hover .tools {
+    display: inline-block;
+}
+.table-hover>tbody>tr>td .tools a {
+    color: #dd4b39;
+    margin-left: 5px;
+}
+.table-hover>tbody>tr>td .tools {
+    display: none;
+    float: right;
+}
+.table>tbody>tr>td img {
+    max-height: 22px;
+}
+.form-horizontal .control-label {
+    text-align: left;
+}
+.form-horizontal .control-label span {
+    color: red;
+}
+.form-group.has-error .help-block {
+    font-size: 12px;
+}
+p.help-note {
+    font-size: 10px;
+    color: gray;
+}
+.login-box, .register-box {
+    width: 400px;
+    margin: 0% auto;
+}
+.login-logo a, .register-logo a {
+    color: #fff;
+}
+.login-page .login-logo {
+    padding-top: 50px;
+}
+.login-box-body, .register-box-body {
+    padding: 50px;
+}
+.form-image a.close {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 0px;
+    font-size: 16px;
+}
+.form-image a:hover {
+    color: red;
+}
+.form-image img {
+    position: relative;
+}
+.form-image a.close {
+    opacity: 1;
+}
+.content-header .alert {
+    margin-bottom: 0px;
+}
+.page-status {
+    margin: 7px 0;
+}
+.pagination-wrap {
+    padding: 0px 10px 4px;
+}
+.table>tbody>tr>th {
+    background-color: #3c8dbc;
+    color: white;
+}
+.table>tbody>tr>th:first-child ,
+.table>tbody>tr>th:last-child {
+    width: 120px;
+}
+
+/*smartmenus*/
+.sm-blue a, .sm-blue a:hover, .sm-blue a:focus, .sm-blue a:active {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+}
+@media (min-width: 768px){
+/*    .sm-blue a span.sub-arrow {
+        top: 50%;
+        left: 85%;
+    }
+    .sm-blue ul a, .sm-blue ul a:hover, .sm-blue ul a:focus, .sm-blue ul a:active, .sm-blue ul a.highlighted {
+        padding: 5px 10px;
+    }*/
+}
+.sm-blue {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+    z-index: 1;
+    border-radius: 3px;
+}
+.sm-blue a span.sub-arrow {
+    top: 50%;
+    left: 85%;
+}
+.sm-blue ul a, .sm-blue ul a:hover, .sm-blue ul a:focus, .sm-blue ul a:active, .sm-blue ul a.highlighted {
+    padding: 5px 10px;
+}
+.sm-blue a, .sm-blue a:hover, .sm-blue a:focus, .sm-blue a:active, .sm-blue a.highlighted {
+    padding: 6px 30px 6px 10px;
+}
+.sm-blue ul a, .sm-blue ul a:hover, .sm-blue ul a:focus, .sm-blue ul a:active {
+    font-size: 14px;
+}
+.sm-blue > li:last-child > a, .sm-blue > li:last-child > :not(ul) a {
+    border-radius: 0 3px 3px 0 !important;
+}
+.sm-blue a span.sub-arrow {
+    border-width: 4px;
+}
+.form-group .post-categories {
+    height: 200px;
+    overflow: auto;
+}
+.form-group .post-categories ul {
+    padding-left: 25px;
+}
+.form-group .post-categories ul li {
+    list-style-type: none;
+}
+
+.input_fields_wrap_fields_values table tr td {
+    padding: 5px;
+}
+.icheckbox_flat-blue.checked {
+    background-position: -15px 0;
+}
+.icheckbox_flat-blue, .iradio_flat-blue {
+    width: 14px;
+    height: 15px;
+    background-size: cover;
+}
+.post-categories ul li label {
+    font-size: 13px;
+}
+.main-header .logo .logo-lg {
+    font-size: 16px;
+    text-align: left;
+}
+.skin-blue .sidebar-form {
+    margin: 7px 0px;
+    float: left;
+    width: 300px;
+}
+.input_fields_wrap_fields_values table tr th {
+    padding: 5px;
+    font-weight: 600;
+}
+/*.table>tbody>tr>td img:hover{
+    max-height: 75px;
+}*/
+.pagination {
+    margin: 0;
+}
+.pagination>li>a, .pagination>li>span {
+    padding: 4px 10px;
+}
+select[multiple], select[size] {
+    height: auto;
+    resize: vertical;
+}
+.sidebar-menu .treeview-menu>li>a {
+    padding: 5px 5px 5px 30px;
+}
+.sidebar-mini.sidebar-collapse .sidebar-form {
+    display: block !important;
+}
+.nav-tabs-custom>.nav-tabs>li.active {
+    font-weight: 700;
+}
+.nav-tabs-custom .has-error a,
+.nav-tabs-custom .has-error a
+{
+    color: #dd4b39;
+}
+
+.nav-tabs li.has-error a{
+  color: #dd4b39!important;   
+}
+.has-error .help-block{
+    color: #dd4b39!important; 
+}
+.help-block{
+    font-size: 12px;
+}
+.nav-tabs-custom>.tab-content {
+    padding: 10px 0;
+}
