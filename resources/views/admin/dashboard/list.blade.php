@@ -9,7 +9,7 @@
     <td class="item-title">{{ $m->fname }} </td>
     <td class="item-title">{{ $m->lname }} </td>
     <td class="item-title">{{ $m->email }} </td>
-    <td class="item-title">{{ $m->contact }} </td>
+    <td class="item-title">{{ $m->phone }} </td>
     <td class="item-title">{{ $m->address }} </td>
     <td>{{ $m->updated_at->format('y-m-d') }}</td>
     <td>

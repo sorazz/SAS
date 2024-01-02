@@ -8,10 +8,12 @@ use App\Models\Feature;
 use App\Models\Services;
 use App\Models\Testimonial;
 use App\Http\Requests\ContactRequest;
+use App\Mail\ContactMail;
 use App\Models\Contact;
 use App\Models\Project;
 use App\Models\SiteSetting;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
 
 class PageController extends Controller
 {
@@ -63,10 +65,14 @@ class PageController extends Controller
         $contact->fname = $input['fname'];
         $contact->lname = $input['lname'];
         $contact->email = $input['email'];
-        $contact->contact = $input['contact'];
+        $contact->phone = $input['contact'];
         $contact->address = $input['address'];
         $contact->description = $input['comments'];
         $contact->save();
+
+        Mail::to($input['email'])->send(new ContactMail([
+            'name' => $input['fname'].' '.$input['lname'],
+       ]));
 
         return response()->json([
             'message' => "Quote has been sent success",

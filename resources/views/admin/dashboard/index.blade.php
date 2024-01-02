@@ -6,13 +6,13 @@
         <!-- small box -->
         <div class="small-box bg-red">
             <div class="inner">
-                <h3>3</h3>
-                <p>Service</p>
+                <h3>{{$service}}</h3>
+                <p>Services</p>
             </div>
             <div class="icon">
-                <i class="fa fa-globe"></i>
+                <i class="fa fa-wrench"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{url('/admin/service')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -21,13 +21,13 @@
         <!-- small box -->
         <div class="small-box bg-green">
             <div class="inner">
-                <h3>6</h3>
-                <p>Our Products</p>
+            <h3>{{$feature}}</h3>
+                <p>Feature</p>
             </div>
             <div class="icon">
-                <i class="fa fa-list-alt"></i>
+                <i class="fa fa-industry"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{url('/admin/feature')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -35,13 +35,13 @@
         <!-- small box -->
         <div class="small-box bg-aqua">
             <div class="inner">
-                <h3>5</h3>
-                <p>banner</p>
+                <h3>{{$project}}</h3>
+                <p>Projects</p>
             </div>
             <div class="icon">
                 <i class="fa fa-flag"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{url('/admin/project')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
