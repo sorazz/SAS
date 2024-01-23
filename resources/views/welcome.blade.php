@@ -6,9 +6,7 @@
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="big-tagline">
-                    <h2>Increase Your Ranking<br> on Search Engines</h2>
-                    <p class="lead">With FLaxSEO responsive landing page template, you can showcase your awesome seo services!</p>
-                    <a href="#support" class="btn btn-light btn-radius btn-brd ban-btn">Free SEO Analysis</a>
+                    {!!$setting->site_info!!}
                 </div>
             </div>
 
@@ -55,46 +53,10 @@
             </div><!-- end col -->
 
             <div class="col-md-6 m40">
-                <div class="message-box">
-                    <h4>Awards Winning SEO Company</h4>
-                    <h2>We Are FlaxSeo</h2>
-                    <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
 
-                    <div class="skills">
-                        <div class="skills-wrapper">
-                            <h3>Search Engine Optimization</h3>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success color6 wow slideInLeft" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%">
-                                </div>
-                            </div>
-                        </div><!-- end skills-wrapper -->
-
-                        <div class="skills-wrapper">
-                            <h3>Conversion Rate Optimization</h3>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success color2 wow slideInLeft" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                </div>
-                            </div>
-                        </div><!-- end skills-wrapper -->
-
-                        <div class="skills-wrapper">
-                            <h3>Online Reputation Management</h3>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success color3 wow slideInLeft" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                </div>
-                            </div>
-                        </div><!-- end skills-wrapper -->
-
-                        <div class="skills-wrapper">
-                            <h3>Google AdWords</h3>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success color5 wow slideInLeft" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                </div>
-                            </div>
-                        </div><!-- end skills-wrapper -->
-                    </div><!-- end skills -->
-                </div><!-- end messagebox -->
-            </div><!-- end col -->
+                {!!$setting->about_caption!!}
+                {!!$setting->site_description!!}
+            </div><!-- end messagebox -->
         </div><!-- end row -->
 
         <hr class="hr1">
@@ -141,18 +103,12 @@
     </div><!-- end container -->
 </div><!-- end section -->
 
-<section class="section nopad cac text-center">
-    <a href="#">
-        <h3>Interesting our awesome web design services? Just drop an email to us and get quote for free!</h3>
-    </a>
-</section>
 
 <div id="services" class="section lb">
     <div class="container">
         <div class="section-title text-center">
-            <small>OnePage SEO - Validation - BACKLINKS</small>
-            <h3>SEO Services</h3>
-            <p class="lead">We offer unlimited solutions to all your business needs. in the installation package we prepare search engine optimization, social media support, we provide corporate identity and graphic design services.</p>
+            <h3>Our Services</h3>
+            {!! $setting->service_description !!}
         </div><!-- end title -->
         <div class="row text-center">
             <div class="col-md-4 col-sm-4 col-xs-12">
@@ -329,92 +285,6 @@
     </div><!-- end container -->
 </div><!-- end section -->
 
-<div id="pricing" class="section pricing-bg">
-    <div class="container">
-        <div class="section-title text-center">
-            <h3>Ready to get started?</h3>
-            <p class="lead">Get the red carpet treatment just $39 per month! It is estimated that 3.5 million established by personal blogs.<br> From each other, we share paid WordPress themes WP Service...</p>
-        </div><!-- end title -->
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="tab-content">
-                    <div class="tab-pane active fade in" id="tab1">
-                        <div class="row text-center">
-                            <div class="col-md-4">
-                                <div class="pricing-table pricing-table-highlighted">
-                                    <div class="pricing-table-header grd1">
-                                        <h2>Free SEO Analysis</h2>
-                                        <h3>$15/month</h3>
-                                    </div>
-                                    <div class="pricing-table-space"></div>
-                                    <div class="pricing-table-text">
-                                        <p>This is a perfect choice for small businesses and startups.</p>
-                                    </div>
-                                    <div class="pricing-table-features">
-                                        <p><i class="fa fa-envelope-o"></i> <strong>250</strong> Email Addresses</p>
-                                        <p><i class="fa fa-rocket"></i> <strong>125GB</strong> of Storage</p>
-                                        <p><i class="fa fa-database"></i> <strong>140</strong> Databases</p>
-                                        <p><i class="fa fa-link"></i> <strong>60</strong> Domains</p>
-                                        <p><i class="fa fa-life-ring"></i> <strong>24/7 Unlimited</strong> Support</p>
-                                    </div>
-                                    <div class="pricing-table-sign-up">
-                                        <a href="#" class="btn btn-light btn-radius btn-brd grd1 effect-1">Order Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="pricing-table pricing-table-highlighted">
-                                    <div class="pricing-table-header grd1">
-                                        <h2>4 Month SEO</h2>
-                                        <h3>$59/One-Time</h3>
-                                    </div>
-                                    <div class="pricing-table-space"></div>
-                                    <div class="pricing-table-text">
-                                        <p>This is a perfect choice for small businesses and startups.</p>
-                                    </div>
-                                    <div class="pricing-table-features">
-                                        <p><i class="fa fa-envelope-o"></i> <strong>150</strong> Email Addresses</p>
-                                        <p><i class="fa fa-rocket"></i> <strong>65GB</strong> of Storage</p>
-                                        <p><i class="fa fa-database"></i> <strong>60</strong> Databases</p>
-                                        <p><i class="fa fa-link"></i> <strong>30</strong> Domains</p>
-                                        <p><i class="fa fa-life-ring"></i> <strong>24/7 Unlimited</strong> Support</p>
-                                    </div>
-                                    <div class="pricing-table-sign-up">
-                                        <a href="#" class="btn btn-light btn-radius btn-brd grd1 effect-1">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="pricing-table pricing-table-highlighted">
-                                    <div class="pricing-table-header grd1">
-                                        <h2>Ultimate SEO</h2>
-                                        <h3>$85/one-time</h3>
-                                    </div>
-                                    <div class="pricing-table-space"></div>
-                                    <div class="pricing-table-text">
-                                        <p>This is a perfect choice for small businesses and startups.</p>
-                                    </div>
-                                    <div class="pricing-table-features">
-                                        <p><i class="fa fa-envelope-o"></i> <strong>250</strong> Email Addresses</p>
-                                        <p><i class="fa fa-rocket"></i> <strong>125GB</strong> of Storage</p>
-                                        <p><i class="fa fa-database"></i> <strong>140</strong> Databases</p>
-                                        <p><i class="fa fa-link"></i> <strong>60</strong> Domains</p>
-                                        <p><i class="fa fa-life-ring"></i> <strong>24/7 Unlimited</strong> Support</p>
-                                    </div>
-                                    <div class="pricing-table-sign-up">
-                                        <a href="#" class="btn btn-light btn-radius btn-brd grd1 effect-1">Order Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- end row -->
-                    </div><!-- end pane -->
-                </div><!-- end content -->
-            </div><!-- end col -->
-        </div><!-- end row -->
-    </div><!-- end container -->
-</div><!-- end section -->
 
 <div id="testimonials" class="section wb">
     <div class="container">

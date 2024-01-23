@@ -19,7 +19,7 @@ class SiteSetting extends Model
     protected $fillable = [
         'site_info','site_name','site_description','facebook','instagram','contact_no','contact_info',
         'contact_description','contact_email','contact_address','goal','objective','client_description','project_description',
-        'service_description','about_caption','about_image','meta','about_bg_image','site_logo','about_bg_image','contact_image'
+        'service_description','about_caption','about_description','about_image','meta','about_bg_image','site_logo','about_bg_image','contact_image'
     ];
 
 
@@ -84,6 +84,7 @@ class SiteSetting extends Model
        $model->project_description = $inputs['project_description'] ? $inputs['project_description'] : ''; 
        $model->service_description = $inputs['service_description'] ? $inputs['service_description'] : ''; 
        $model->about_caption = $inputs['about_caption'] ? $inputs['about_caption'] : ''; 
+       $model->about_description = $inputs['about_description'] ? $inputs['about_description'] : ''; 
        $model->meta = $inputs['meta'] ? $inputs['meta'] : ''; 
        $model->meta_keyword = $inputs['meta_keyword'] ?   $inputs['meta_keyword'] : ''; 
        $model->meta_description =  $inputs['meta_description'] ? $inputs['meta_description'] : ''; 
