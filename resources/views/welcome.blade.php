@@ -111,149 +111,42 @@
             {!! $setting->service_description !!}
         </div><!-- end title -->
         <div class="row text-center">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <img src="{{asset('frontend/uploads/seo_01.png')}}" alt="" class="img-responsive img-rounded">
-                    </div>
-                    <h3>SEO Optimization</h3>
-                    <p>Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est, convallis nec purus vitae, iaculis posuere sapien. Cum sociis natoque.</p>
-                </div><!-- end service -->
-            </div><!-- end col -->
+            @foreach($services->take(3) as $service)
 
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="service-widget">
                     <div class="post-media wow fadeIn">
-                        <img src="{{asset('frontend/uploads/seo_02.png')}}" alt="" class="img-responsive img-rounded">
+                        <img src="{{asset('uploads/service/'.$service->image)}}" alt="" class="img-responsive img-rounded">
                     </div>
-                    <h3>Backlink Management</h3>
-                    <p>Duis at tellus at dui tincidunt scelerisque nec sed felis. Suspendisse id dolor sed leo rutrum euismod. Nullam vestibulum fermentum erat. It nam auctor. </p>
+                    <h3><a href="{{url('/page/'.$service->id .'/service')}}">{{$service->title}}</a></h3>
+                    {!! substr($service->description,0,200) !!}...
                 </div><!-- end service -->
             </div><!-- end col -->
-
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <img src="{{asset('frontend/uploads/seo_03.png')}}" alt="" class="img-responsive img-rounded">
-                    </div>
-                    <h3>Pay Per Click</h3>
-                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis accumsan.</p>
-                </div><!-- end service -->
-            </div><!-- end col -->
+            @endforeach
         </div><!-- end row -->
 
         <hr class="invis">
 
         <div class="row text-center">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <img src="{{asset('frontend/uploads/seo_04.png')}}" alt="" class="img-responsive img-rounded">
-                    </div>
-                    <h3>Dashboard Statics</h3>
-                    <p>Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est, convallis nec purus vitae, iaculis posuere sapien. Cum sociis natoque.</p>
-                </div><!-- end service -->
-            </div><!-- end col -->
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <img src="{{asset('frontend/uploads/seo_05.png')}}" alt="" class="img-responsive img-rounded">
-                    </div>
-                    <h3>Onepage SEO</h3>
-                    <p>Duis at tellus at dui tincidunt scelerisque nec sed felis. Suspendisse id dolor sed leo rutrum euismod. Nullam vestibulum fermentum erat. It nam auctor. </p>
-                </div><!-- end service -->
-            </div><!-- end col -->
+            @foreach($services->skip(3) as $service)
 
-            <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="service-widget">
                     <div class="post-media wow fadeIn">
-                        <img src="{{asset('frontend/uploads/seo_06.png')}}" alt="" class="img-responsive img-rounded">
+                        <img src="{{asset('uploads/service/'.$service->image)}}" alt="" class="img-responsive img-rounded">
                     </div>
-                    <h3>Black Hat SEO</h3>
-                    <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis accumsan.</p>
+                    <h3><a href="{{url('/page/'.$service->id .'/service')}}">{{$service->title}}</a></h3>
+                    {!! substr($service->description,0,200) !!}...
                 </div><!-- end service -->
             </div><!-- end col -->
+            @endforeach
+
+
         </div><!-- end row -->
     </div><!-- end container -->
 </div><!-- end section -->
 
-<div id="case" class="section wb">
-    <div class="container">
-        <div class="section-title text-center">
-            <small>Our Awesome Clients</small>
-            <h3>Case Study</h3>
-            <p class="lead">We offer unlimited solutions to all your business needs. in the installation package we prepare search engine optimization, social media support, we provide corporate identity and graphic design services.</p>
-        </div><!-- end title -->
-
-        <div class="owl-screenshots owl-carousel owl-theme text-center">
-            <div class="owl-screen">
-                <div class="service-widget">
-                    <div class="post-media entry wow fadeIn">
-                        <a href="{{asset('frontend/uploads/version_01.jpg')}}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="{{asset('frontend/uploads/version_01.jpg')}}" alt="" class="img-responsive img-rounded">
-                        <div class="magnifier"></div>
-                    </div>
-
-                    <h3>Web Design Project</h3>
-                    <small>Landing Page</small>
-                </div><!-- end service -->
-            </div><!-- end col -->
-
-            <div class="owl-screen">
-                <div class="service-widget">
-                    <div class="post-media entry wow fadeIn">
-                        <a href="{{asset('frontenduploads/version_02.jpg')}}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="{{asset('frontenduploads/version_02.jpg')}}" alt="" class="img-responsive img-rounded">
-                        <div class="magnifier"></div>
-                    </div>
-
-                    <h3>App Project</h3>
-                    <small>Landing Page</small>
-                </div><!-- end service -->
-            </div><!-- end col -->
-
-            <div class="owl-screen">
-                <div class="service-widget">
-                    <div class="post-media entry wow fadeIn">
-                        <a href="{{asset('frontenduploads/version_03.jpg')}}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="u{{asset('frontend/uploads/version_03.jpg')}}" alt="" class="img-responsive img-rounded">
-                        <div class="magnifier"></div>
-                    </div>
-
-                    <h3>Watch Project</h3>
-                    <small>Landing Page</small>
-                </div><!-- end service -->
-            </div><!-- end col -->
-
-            <div class="owl-screen">
-                <div class="service-widget">
-                    <div class="post-media entry wow fadeIn">
-                        <a href="{{asset('frontend/uploads/version_04.jpg')}}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="{{asset('frontend/uploads/version_04.jpg')}}" alt="" class="img-responsive img-rounded">
-                        <div class="magnifier"></div>
-                    </div>
-
-                    <h3>Hosting Project</h3>
-                    <small>Landing Page</small>
-                </div><!-- end service -->
-            </div><!-- end col -->
-
-            <div class="owl-screen">
-                <div class="service-widget">
-                    <div class="post-media entry wow fadeIn">
-                        <a href="{{asset('frontenduploads/version_05.jpg')}}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="{{asset('frontenduploads/version_05.jpg')}}" alt="" class="img-responsive img-rounded">
-                        <div class="magnifier"></div>
-                    </div>
-
-                    <h3>SEO Project</h3>
-                    <small>Landing Page</small>
-                </div><!-- end service -->
-            </div><!-- end col -->
-        </div><!-- end owl -->
-    </div><!-- end container -->
-</div><!-- end section -->
 
 <div class="parallax section lb">
     <div class="container">

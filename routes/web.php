@@ -15,14 +15,11 @@ use GuzzleHttp\Middleware;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\Frontend\PageController::class, 'index'])->name('index');
 Route::get('/page/{slug}', [App\Http\Controllers\Frontend\PageController::class, 'page'])->name('page');
+Route::get('/page/{id}/{slug}', [App\Http\Controllers\Frontend\PageController::class, 'single'])->name('single-page');
 Route::post('/contactUs', [App\Http\Controllers\Frontend\PageController::class, 'contact'])->name('contactUs');
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin' , 'middleware'=>'auth'], function(){  
     Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');

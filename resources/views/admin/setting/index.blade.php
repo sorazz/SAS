@@ -35,7 +35,7 @@
                     <div class="form-group{{ $errors->first('tel_no')?' has-error':'' }}">
                         <label class="col-sm-3 control-label">Tel No</label>
                         <div class="col-sm-9">
-                            <input type="number" name="contact_no" value="{{$model->contact_no}}" class="form-control" placeholder="Contact number">
+                            <input type="text" name="contact_no" value="{{$model->contact_no}}" class="form-control" placeholder="Contact number">
                             {!! $errors->first('contact_no', '<span class="help-block">:message</span>') !!}
                         </div>
                     </div>
