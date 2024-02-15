@@ -29,10 +29,9 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="widget clearfix">
                     <div class="widget-title">
-                        <img src="{{asset('frontend/images/logos/logo-light.png')}}" alt="">
-                        <small>{{$setting->site_name}}</small>
+                        <img src="{{asset('uploads/setting/logo/'.$setting->site_logo)}}" alt="">
                     </div>
-                    {!! $setting->goal!!}
+                   <p style="justify-content: flex-start;"> {!! $setting->goal!!}</p>
                 </div><!-- end clearfix -->
             </div><!-- end col -->
 
@@ -61,8 +60,8 @@
                     <ul class="footer-links">
                         <li><a href="{{'/'}}">Home</a></li>
                         <li><a href="{{'/services'}}">Service</a></li>
-                        <li><a href="{{'/project'}}">Project</a></li>
-                        <li><a href="{{'/testimonial'}}">Testimonial</a></li>
+                        <!-- <li><a href="{{'/project'}}">Project</a></li>
+                        <li><a href="{{'/testimonial'}}">Testimonial</a></li> -->
                         <li><a href="{{'/contact'}}">Contact</a></li>
 
                     </ul><!-- end links -->
@@ -89,7 +88,7 @@
     <div class="container">
         <div class="footer-distributed">
             <div class="footer-left">
-                <p class="footer-company-name">All Rights Reserved. &copy; 2024 <a href="{{url('/')}}">ICTS</a></p>
+                <p class="footer-company-name">All Rights Reserved. &copy; 2024 <a href="{{url('/')}}">ITCS</a></p>
             </div>
         </div>
     </div><!-- end container -->

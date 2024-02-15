@@ -9,13 +9,13 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
-    <title>ICTS</title>  
+    <title>ITCS</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="{{asset('frontend/images/favicon.ico')}}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{asset('uploads/setting/logo/'.$setting->site_logo)}}" type="image/x-icon" />
     <link rel="apple-touch-icon" href="{{asset('frontend/images/apple-touch-icon.png')}}">
 
     <!-- Bootstrap CSS -->

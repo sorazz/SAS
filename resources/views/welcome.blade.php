@@ -47,58 +47,17 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="post-media wow fadeIn">
-                    <img src="{{asset('frontend/uploads/about_01.jpg')}}" alt="" class="img-responsive img-rounded">
-                    <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
+                    <img src="{{asset('uploads/setting/about/image/'.$setting->about_image)}}" alt="" class="img-responsive img-rounded">
                 </div><!-- end media -->
             </div><!-- end col -->
 
             <div class="col-md-6 m40">
 
                 {!!$setting->about_caption!!}
-                {!!$setting->site_description!!}
+                {!! substr($setting->site_description,0,800) !!}...
+                <button class="btn-btn-primary"><a href="{{url('/page/about')}}">Read More</a></button>
             </div><!-- end messagebox -->
         </div><!-- end row -->
-
-        <hr class="hr1">
-
-        <div class="section-title text-center">
-            <small>The Landigoo SEO Market</small>
-            <h3>Who We Are</h3>
-            <p class="lead">We offer unlimited solutions to all your business needs. in the installation package we prepare search engine optimization, social media support, we provide corporate identity and graphic design services.</p>
-        </div><!-- end title -->
-
-        <div class="seo-services row clearfix">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="who">
-                    <img src="{{asset('frontend/images/seo-icons/growth.svg')}}" alt="icon" class="wow fadeInUp">
-                    <h4>Useful Dashboard</h4>
-                    <p class="lead">Falaningo Ipsum dolroin gravida nibh vel velit aliquet. Aenean lorem quis dashboard..</p>
-                </div>
-            </div><!-- end col -->
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="who">
-                    <img src="{{asset('frontend/images/seo-icons/research.svg')}}" alt="icon" class="wow fadeInUp">
-                    <h4>Research Optimization</h4>
-                    <p class="lead">Research Ipsum dolroin gravida nibh vel velit aliquet. Aenean lorem quis optimization..</p>
-                </div>
-            </div><!-- end col -->
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="who">
-                    <img src="{{asset('frontend/images/seo-icons/stopwatch.svg')}}" alt="icon" class="wow fadeInUp">
-                    <h4>Save Time + Money</h4>
-                    <p class="lead">Save Ipsum dolroin gravida nibh vel velit aliquet. Aenean sollicitudin lorem quis money..</p>
-                </div>
-            </div><!-- end col -->
-
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="who">
-                    <img src="{{asset('frontend/images/seo-icons/development.svg')}}" alt="icon" class="wow fadeInUp">
-                    <h4>Ranking Monitoring</h4>
-                    <p class="lead">Monitoring Ipsum dolroin gravida nibh vel velit aliquet. Aenean sollicitudin ranking..</p>
-                </div>
-            </div><!-- end col -->
         </div><!-- end how-its-work -->
     </div><!-- end container -->
 </div><!-- end section -->
@@ -119,7 +78,7 @@
                         <img src="{{asset('uploads/service/'.$service->image)}}" alt="" class="img-responsive img-rounded">
                     </div>
                     <h3><a href="{{url('/page/'.$service->id .'/service')}}">{{$service->title}}</a></h3>
-                    {!! substr($service->description,0,200) !!}...
+                    {!! substr($service->caption,0,200) !!}...
                 </div><!-- end service -->
             </div><!-- end col -->
             @endforeach
@@ -131,13 +90,13 @@
 
             @foreach($services->skip(3) as $service)
 
-          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="service-widget">
                     <div class="post-media wow fadeIn">
                         <img src="{{asset('uploads/service/'.$service->image)}}" alt="" class="img-responsive img-rounded">
                     </div>
                     <h3><a href="{{url('/page/'.$service->id .'/service')}}">{{$service->title}}</a></h3>
-                    {!! substr($service->description,0,200) !!}...
+                    {!! substr($service->caption,0,200) !!}...
                 </div><!-- end service -->
             </div><!-- end col -->
             @endforeach

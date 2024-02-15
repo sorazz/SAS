@@ -49,7 +49,7 @@
     <div class="container">
         <div class="section-title text-center">
             <h3>Get In Touch</h3>
-            <p class="lead">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, true generator<br> on the Internet. It uses a dictionary of over..</p>
+            <p class="lead">{!!$setting->contact_info!!}</p>
         </div><!-- end title -->
         <div id="success-alert">
 
@@ -100,11 +100,6 @@
     </div><!-- end container -->
 </div><!-- end section -->
 
-<section class="section nopad cac text-center">
-    <a href="#">
-        <h3>Interesting our awesome web design services? Just drop an email to us and get quote for free!</h3>
-    </a>
-</section>
 
 <div id="support" class="section db">
     <div class="container">

@@ -14,7 +14,7 @@
                         <input type="text" name="search" id="search" placeholder="Search">
                     </form>
                 </div>
-                @include('admin.partials.top-action')
+               
             </div>
             <div class="row">
                 <div class="col-xs-12">
@@ -82,7 +82,7 @@
             var $value = $(this).val();
             $.ajax({
                 type: 'get',
-                url: "{{ URL::to('admin/service') }}",
+                url: "{{ URL::to('admin/contact') }}",
                 data: {
                     'search': $value
                 },
@@ -134,8 +134,8 @@
             var con = confirm('Are you sure to delete ?');
             if (con == true) {
                 var id = $(this).attr('id');
-                $.post(
-                    'service/delete', {
+                $.get(
+                    'contact/delete', {
                         id: id,
                         _token: '{!! csrf_token() !!}'
                     },
@@ -151,7 +151,7 @@
         if (con == true) {
             var id = $(this).attr('id');
             $.post(
-                'service/delete', {
+                'contact/delete', {
                     id: id,
                     _token: '{!! csrf_token() !!}'
                 },

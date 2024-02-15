@@ -17,6 +17,18 @@ use Illuminate\Support\Facades\Mail;
 
 class PageController extends Controller
 {
+
+    public function index(){
+         $services = Services::orderBy('title', 'desc')->get();
+         $projects = Project::orderBy('name', 'desc')->get();
+         $features = Feature::orderBy('title', 'desc')->get();
+         $testimonials = Testimonial::orderBy('name', 'desc')->get();
+         return view('welcome', compact('services', 'projects', 'features', 'testimonials'));
+
+
+    }
+
+
     public function page(Request $request)
     {
         $slug = $request->slug;
@@ -41,7 +53,7 @@ class PageController extends Controller
                 $data = [];
                 break;
         }
-        return view('frontend.pages.' . $slug, $data);
+        return view('frontend.pages.'. $slug, compact('data'));
     }
 
     public function contact(ContactRequest $request)
@@ -83,5 +95,35 @@ class PageController extends Controller
             'message' => "Quote has been sent success",
             'success' => true
         ]);
+    }
+
+    public function single($id,Request $request){
+        $slug = $request->slug;
+
+        switch ($slug) {
+            case 'feature':
+                $data = Feature::find($id);
+                $related = Feature::where('id' ,'!=',$id)->get();
+                break;
+            case 'project':
+                $data = Project::find($id);
+                $related = Project::where('id' ,'!=',$id)->get();
+                break;
+            case 'service':
+                $data = Services::find($id);
+                $related = Services::where('id' ,'!=',$id)->get();
+                break;
+            case 'testimonial':
+                $data = Testimonial::find($id);
+                $related = Testimonial::where('id' ,'!=',$id)->get();
+                break;
+            default:
+                $data = [];
+                $related = [];
+                break;
+        }
+  
+        return view('frontend.pages.single', compact('data','slug','related'));
+
     }
 }

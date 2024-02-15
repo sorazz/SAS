@@ -55,5 +55,11 @@
     </div><!-- end container -->
 </div><!-- end section -->
 
-
+<div id="support" class="section db">
+    <div class="container">
+        <div class="section-title text-center">
+    
+        </div><!-- end title -->
+    </div><!-- end container -->
+</div><!-- end section -->
 @endsection

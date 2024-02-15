@@ -5,17 +5,10 @@
     <!-- LOADER -->
     <div id="preloader">
         <div id="cupcake" class="box">
-            <span class="letter">L</span>
-            <div class="cupcakeCircle box">
-                <div class="cupcakeInner box">
-                    <div class="cupcakeCore box"></div>
-                </div>
-            </div>
-            <span class="letter box">A</span>
-            <span class="letter box">D</span>
             <span class="letter box">I</span>
-            <span class="letter box">N</span>
-            <span class="letter box">G</span>
+            <span class="letter box">T</span>
+            <span class="letter box">C</span>
+            <span class="letter box">C</span>
         </div>
     </div>
     <!-- END LOADER -->
@@ -30,15 +23,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('frontend/images/logos/logo-seo.png')}}" alt="image"></a>
+                    <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('uploads/setting/logo/'.$setting->site_logo)}}" alt="image"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right menu-top">
                         <li><a href="{{url('/')}}">Home</a></li>
                         <li><a href="{{url('/page/about')}}">About Us </a></li>
                         <li><a href="{{url('/page/services')}}">Services</a></li>
-                        <li><a href="{{url('/page/feature')}}">Feature</a></li>
-                        <li><a href="{{url('/page/project')}}">Project</a></li>
+                        <!-- <li><a href="{{url('/page/feature')}}">Feature</a></li>
+                        <li><a href="{{url('/page/project')}}">Project</a></li> -->
                         <li><a href="{{url('/page/contact')}}">Contact</a></li>
                     </ul>
                 </div>

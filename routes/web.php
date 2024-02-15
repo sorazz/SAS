@@ -25,6 +25,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin' , 'middleware'=>'auth'
     Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
     Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('home');
     Route::get('contact', [App\Http\Controllers\Admin\DashboardController::class, 'contact'])->name('contact');
+    Route::get('contact/{id}', [App\Http\Controllers\Admin\DashboardController::class, 'deleteContact'])->name('deleteContact');
     Route::get('site-setting', [App\Http\Controllers\Admin\SettingController::class, 'index']);
     Route::post('site-setting/{id}', [App\Http\Controllers\Admin\SettingController::class, 'update']);
 

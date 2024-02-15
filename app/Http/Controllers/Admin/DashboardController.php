@@ -24,4 +24,9 @@ class DashboardController extends Controller
         $data['models'] = Contact::orderBy('lname','desc')->paginate(10);
         return view('admin.dashboard.contact', $data);
     }
+
+    public function deleteContact(Request $request){
+        Contact::where('id',$request->id)->delete();
+        return back()->with('message', '<span>' . 'contact' . 'deleted '  . '</span>');
+    }
 }
